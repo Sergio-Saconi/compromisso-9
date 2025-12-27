@@ -1,0 +1,403 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+
+
+body {
+    font-family: "DM Sans" sans-serif;
+    background-color: azure; 
+    padding-top: -30px;
+    /*background-image: url("src/imagem/azulejo.jpg");
+    background-color: rgba(0, 0, 0, 0.2);*/
+}
+
+div#interface {
+    /* O simbolo # é usado nas tags com id Ex: <div id="interface">*/
+    width: 95%;
+    margin: 10px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
+    /*sombra no item*/
+    padding: 10px 10px 10px 10px;
+    /*informar somente uma vez se = todos os valores*/
+    text-indent: 20px;
+}
+
+.title .texto {
+    text-align: center;
+    display: block;
+    align-items: center;
+    text-indent: 40px;
+    font-family: "DM Sans", sans-serif;
+     font: 40px;
+    width: 700;
+    background-color: rgb(224, 215, 210);
+    position: relative;
+    top: 50px;
+}
+/*Formatar links*/
+a {
+    color: #606060;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+div#container {
+    border-bottom: 2px #60606060 solid;
+}
+
+.container {
+    display: block;
+    align-items: center;
+
+
+}
+
+.title .imagem {
+
+    width: 150px;
+    height: auto;
+    margin-left: 150px;
+
+
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    right: 20px;
+    left: 200;
+    top: 80px;
+    text-shadow: 01px 01px 01px black;
+}
+
+
+.pedreiro {
+    display: block;
+}
+
+.texto {
+    font-size: 20px;
+
+}
+
+.gradiente-texto {
+    display: block;
+   font-size: 60px;
+    background: linear-gradient(to right, #0e0d0c, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -10px;
+    
+
+}
+
+.gradiente-texto .imagem {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border-bottom: 2px #60606060 solid;
+}
+
+
+.pinduka {
+    font-family: "DM Sans", sans-serif;
+    width: 700;
+    padding-left: 20px;
+    text-indent: 40px;
+    margin-left: 30px;
+    text-align: justify;
+    text-shadow: 2px 2px 2px black;
+    /* acrecenta sombra nos item*/
+
+}
+
+.introducao {
+    font-family: "DM Sans", sans-serif;
+    /*font-style: italic;*/
+    font: 45px;
+    font-size: 50px;
+    width: 700;
+    font-size: large;
+    padding-left: 20px;
+    margin-top: 50px;
+
+}
+
+.descricao {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.carrosel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.imagens-carrosel {
+    display: flex;
+    transition: transforme 0.5s ease;
+}
+
+.imagem img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*formataçao de imagem com legenda*/
+.foto-legenda {
+    position: relative;
+    border: 8px solid #eff5f5;
+    box-shadow: 1px 1px 3px black;
+    width: 50%;
+    height: 50%;
+    text-indent: 0px;
+    align-items: center;
+}
+
+.foto-legenda img {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+}
+
+.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-indent: 20px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+.foto-legenda:hover figcaption {
+    opacity: 0.7;
+}
+
+/*Formataçao do menu*/
+nav#menu {
+    display: block;
+    /*para itens flutuar*/
+    margin-top: -20px;
+}
+
+nav#menu ul {
+    list-style: none;
+    /*tira marcações*/
+    text-transform: uppercase;
+    /*adiciona caixa alta (maiúsculas)*/
+    position: absolute;
+    /*para posicionar o elmento em qualquer posição na tela*/
+    top: -40px;
+    /*posição vertical*/
+    left: 300px;
+    /*posição horizontal*/
+}
+
+nav#menu li {
+   display: inline-block;
+    /*todos itens alinhados horizontalmente*/
+    background-color: #dddddd;
+    /*ciaxas coloridas ao redor do texto*/
+    padding: 10px;
+    /*cria espaço nas caixas*/
+    margin: 5px;
+    /*espaço entre itens*/
+    transition: background-color 0.8s;
+  
+    /*controla a transição dos elementos*/
+    /*para navegadore antigos
+    -webkit-transition: bacground-color 0.8s;
+    -moz-transition:background-color 0.8s  ;
+    -o-transition:background-color 0.8s ;
+    -ms-transition:bacground-color 0.8s;*/
+
+}
+
+/*formatar elementos do menu*/
+nav#menu li:hover {
+    background-color: #606060;
+    /*muda cor do elemento ao passsar o mause*/
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+nav#menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    
+}
+
+.instagram {
+    display: block;
+    display: inline-block;
+    /*todos itens alinhados horizontalmente*/
+    background-color: #dddddd;
+    /*ciaxas coloridas ao redor do texto*/
+    padding: 10px;
+    /*cria espaço nas caixas*/
+    margin: 5px;
+    /*espaço entre itens*/
+    transition: background-color 0.8s;
+    /*controla a transição dos elementos*/
+    list-style: none;
+    /*tira marcações*/
+    text-transform: uppercase;
+    /*adiciona caixa alta (maiúsculas)*/
+
+
+}
+
+
+.instagram a {
+    text-decoration: none;
+    /*tira oa efeitos decorativo do texto*/
+    color: #000000;
+}
+
+.instagram:hover {
+    background-color: #606060;
+    /*muda cor do elemento ao passsar o mause*/
+}
+
+.instagram a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    /*sublima o texto ao passar o mause*/
+}
+
+.conteudo {
+    font-size: 20px;
+}
+
+
+section#body {
+    display: block;
+    width: 60%;
+    float: left;
+    /*para usar a ferramenta float os objetos tem que estar configurados em blocos = display:block;*/
+    border-right: 1px solid #606060;
+}
+article#noticia-principal h2{
+    font-size: 15pt;
+    color: #000000;
+    background-color: #dddddd;
+    padding: 2% 0% 2% 2%;
+    margin: 5% 0% 5% 0%;
+}
+header#cabecalho-artigo h2{
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #777373;
+    margin-bottom: 0px;
+}
+/*Formataçao da tabela*/
+aside#lateral {
+
+    display: block;
+    width: 38%;
+    float: right;
+    top: 30px;
+}
+
+.missao {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    top: 40px;
+    margin-top: 40%;
+}
+table#tabelaspec {
+    border: 1px solid #60606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h1#tabela {
+    display: flex;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    /*vertical-align: middle;*/
+}
+/*Coluna da direita*/
+.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+/*Coluna da esquerda*/
+.cd{
+    background-color:#cecece ;
+}
+/*Formatação do caption*/
+table#tabelaspec caption{
+   color: #888888; 
+   font-size: 13pt;
+   font-weight: bolder;
+}
+caption span{
+    display: block;
+    float: right;
+    font: #000000;
+    font-size: 8pt;
+    margin-top: 2%;
+
+}

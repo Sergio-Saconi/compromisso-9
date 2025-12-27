@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JavaScript</title>
+
+
+
+</head>
+
+<body>
+    <!-- <script>
+        function acendeLampada() {
+            document.getElementById("luz").src = "src/imagem/lampada-acesa.jpg";
+        }
+        function apagaLampada() {
+            document.getElementById("luz").src = "src/imagem/lampada-apagada.jpg";
+        }
+        function quebraLampada(){
+            document.getElementById("luz") .src="src/imagem/lampada-quebrada.jpg";
+           
+        }
+    </script>-->
+
+    <!--<h1>Testando JavaScript</h1>
+    <script>
+        alert("Olá Mundo");
+        document.write("Olá, Mundo!<br>");
+    </script>
+    <script>
+        document.write("Olá! Hoje é dia " + Date());
+        /*Parentes indica que Date é uma função e qu não vou usar nenhum poarametro dentro da função */
+    </script>-->
+    <script>
+        var quebrada = false;
+        function mudaLampada(tipo) {
+            if (tipo == 1) {
+                arquivo = "src/imagem/lampada-acesa.jpg";
+            }
+            if (tipo == 2) {
+                arquivo = "src/imagem/lampada-apagada.jpg";
+            }
+            if (tipo == 3) {
+                arquivo = "src/imagem/lampada-quebrada.jpg";
+
+            }
+            if (!quebrada) {
+                document.getElementById("luz").src = arquivo;
+                if (tipo == 3) {
+                    quebrada = true;
+                }
+            }
+        }
+
+
+
+    </script>
+    <h1>Acenda a Lampada</h1>
+    <img src="src/imagem/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)"
+        onclick="mudaLampada(3)" alt="lampada">;
+
+    <!--<script>
+function mudaLampada(tipo) {
+  let arquivo;
+  if (tipo == 1) {
+    arquivo = "src/imagem/lampada-acesa.jpg";
+  } else if (tipo == 2) {
+    arquivo = "src/imagem/lampada-apagada.jpg";
+  } else if (tipo == 3) {
+    arquivo = "src/imagem/lampada-quebrada.jpg";
+  }
+  document.getElementById("luz").src = arquivo;
+}
+</script>
+</head>
+<body>
+
+<h1>Acenda a Lampada</h1>
+<img src="src/imagem/lampada-apagada.jpg" id="luz" 
+onmouseover="mudaLampada(1)" onmouseout="mudaLampada(2)"
+onclick="mudaLampada(3)" alt="lampada">-->
+
+    <!--<script>
+    var quebrada = false;
+    function mudaLampada (tipo){
+        if (!quebrada){
+            document.getElementById("luz").src = "imagens/" + tipo + ".jpg";
+            if (tipo == 'lampada-quebrada'){
+                quebrada = true;
+            }
+        }
+    }
+</script>
+<h1>Acenda a âmpada</h1>
+<img src="src/imagem/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lapada-acesa')" onmouseout=" mudaLampada ('lampada-apagada')" onclick="mudaLampada ('lampada-quebrada')">-->
+</body>
+
+</html>
