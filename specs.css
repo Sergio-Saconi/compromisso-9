@@ -1,0 +1,79 @@
+ @charset "UTF-8";
+ @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+
+ body {
+     /*width: 95%;*/
+     /* margin: 10px auto 0px auto;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
+        /*sombra no item*/
+     /* padding: 10px 10px 10px 10px;
+        /*informar somente uma vez se = todos os valores*/
+    /* text-indent: 20px;
+     font-family: "DM Sans" sans-serif;
+     background-color: rgb(1, 7, 7);
+     /* padding-top: -30px;*/
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+     line-height: 1.6;
+     color: #333;
+     margin: 0;
+     padding: 0;
+     background-color: #f4f4f4;
+ }
+
+ header {
+     background:rgb(150, 130, 120);
+     color: black;
+     padding: 2rem;
+     text-align: center;
+    /* font-size: 70px;*/
+ }
+
+ .container2 {
+     max-width: 900px;
+     margin: 20px auto;
+     background: white;
+     padding: 30px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+ }
+
+ h1 {
+    font-family: "DM Sans", sans-serif;
+        /*font-style: italic;*/
+        font: 70px;
+        font-size: 70px;
+       /* width: 700;*/
+        font-size: large;
+        padding-left: 20px;
+        margin-top: 50px;
+ }
+
+ h2 {
+     color: #2c3e50;
+     border-bottom: 2px solid #e67e22;
+     padding-bottom: 10px;
+ }
+
+ .spec-item {
+     margin-bottom: 30px;
+     padding: 15px;
+     border-left: 5px solid #504133;
+     background: #fafafa;
+ }
+
+ .spec-item h3 {
+     margin-top: 0;
+     color: rgba(60, 60, 60, );
+ }
+
+ ul {
+     list-style-type: square;
+ }
+
+ footer {
+     text-align: center;
+     margin-top: 20px;
+     font-size: 0.9em;
+     color: #666;
+ }
