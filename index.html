@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="varss.css">
     <link rel="stylesheet" href="sidebar-footer.css">
-    <script src="script.js"></script>
-    <script src="funcao.js"></script>
+    <script src="script.js" defer></script>
 
 
 </head>
@@ -30,7 +29,7 @@
                 </h1>
 
                 <h2 class="pinduka">Pinduca</h2>
-                <img src="src/imagem/sem titulo 8.png" alt="imagem">
+                <!--<img src="src/imagem/sem titulo 8.png" alt="imagem">-->
             </div>
 
         </div>
@@ -49,11 +48,12 @@
                     onmouseout="mudaFoto('src/imagem/colher2.png')"><a href="specs.html"> Especificações</a></li>
                 <li onmouseover="mudaFoto('src/imagem/fotos.png')
                 " onmouseout="mudaFoto('src/imagem/colher2.png')"><a href="fotos.html">Fotos</a> </li>
-                <li onmouseover="mudaFoto('src/imagem/multimidia.png')"         onmouseout="mudaFoto('src/imagem/colher2.png')">
-                    <a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('src/imagem/multimidia.png')" onmouseout="mudaFoto('src/imagem/colher2.png')">
+                    <a href="multimidia.html">Multimídia</a>
+                </li>
 
                 <li><a href="fale-conosco.html">Fale conosco</a> </li>
-                    <ul>
+                <ul>
         </nav>
     </div>
     <div id="interface">
@@ -94,7 +94,34 @@
                         </p>
                     </div>
                 </div>
-                <!--MOntar tabela-->
+                <h3>Experiência e Qualificações</h3>
+                <p>Sérgio Saconi é um profissional completo, que domina as três áreas em que atua:</p>
+
+                <!-- <table border="1" style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+                    <tr style="background-color: #333; color: white;">
+                        <th style="padding: 10px;">Área</th>
+                        <th style="padding: 10px;">Especialidade</th>
+                        <th style="padding: 10px;">Destaque</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;"><b>Pedreiro</b></td>
+                        <td style="padding: 10px;">Alvenaria, rebocos e contrapisos.</td>
+                        <td style="padding: 10px;">Estruturas sólidas e precisas.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;"><b>Azulejista</b></td>
+                        <td style="padding: 10px;">Pisos, porcelanatos e pedras naturais.</td>
+                        <td style="padding: 10px;">Acabamento fino e estético.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;"><b>Carpinteiro</b></td>
+                        <td style="padding: 10px;">Estruturas de telhado e acabamentos.</td>
+                        <td style="padding: 10px;">Trabalho personalizado em madeira.</td>
+                    </tr>
+                </table>-->
+
+                <p><i>*Profissional com mais de 16 anos de experiência no mercado de Borborema e região.</i></p>
+                <!--MOntar tabela
                 <div id="tabela">
                     <h2>Especificações Técnicas</h2>
                 </div>
@@ -122,7 +149,7 @@
                         <td class="ce">Memória Interna</td>
                         <td class="cd">12GB</td>
                     </tr>
-                </table>
+                </table>-->
 
                 <article class="conteudo">
                     <h3>Azulejista:</h3>
@@ -211,34 +238,40 @@
             <h3>Contato</h3>
             <ul>
                 <li>Telefone (16)991429121</a> </li>
-                <li> E-mail: pindukasergio@gmail.com</li>
+                <li> E-mail: sergiosaconi@terra.com.br</li>
                 <li> <a href="https://www.instagram.com/pindukasergio?igsh=MWljc2emx4NDVpMw=="
                         target="_blank">Instagram</a>></li>
 
                 <li> <a href="multimidia.html">Multimídia</a></li>
-                <script>
-                    document.write("Olá! Hoje é dia " + Date());
+
+                <p>&copy; Sérgio Saconi - Construindo e Reformando Sonhos em Borborema/SP</p>
+                </div>
+                <p>Borborema, <span id="data-completa"></span></p>
+
+                <!--<script>atualizarData()
+                    document.write("Olá! Hoje é " + newDate() );
                     /*Parentes indica que Date é uma função e qu não vou usar nenhum poarametro dentro da função */
-                </script>
+                </script>-->
 
             </ul>
         </nav>
         <p class="disclimer-premiun__subtitle"> </p>
         <div id="clock"></div>
+       
 
 
     </footer>
+    
+    
+    <script src="script.js"></script>
+
+    
     <!-- <div class="botao">Instagram</div>-->
+   <!-- <script src="css/estilo.css">
+    </script>-->
 
+<!--<script src="funcao.js" defer></script>-->
+    
+</body >
 
-
-
-
-
-
-
-    <script src="css/estilo.css"></script>
-    </main>
-</body>
-
-</html>
+</html >

@@ -1,0 +1,57 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 10px;
+}
+
+.spec-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-left: 5px solid #e67e22;
+    background: #fafafa;
+}
+
+.spec-item h3 {
+    margin-top: 0;
+    color: #d35400;
+}
+
+ul {
+    list-style-type: square;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+</style></head><body><header><h1>Especificações Técnicas</h1><p>O rigor técnico por trás de cada obra e reforma</p></header><div class="container"><section class="spec-item"><h3>1. Alvenaria e Estrutura</h3><p>Seguimos rigorosamente os padrões de nivelamento e prumo para garantir a estabilidade da construção.</p><ul><li><strong>Levantamento de Paredes:</strong>Alinhamento a laser para precisão milimétrica.</li><li><strong>Reboco:</strong>Aplicação técnica para evitar futuras trincas ou umidades.</li><li><strong>Contrapiso:</strong>Cálculo de caimento preciso para escoamento de água (áreas frias).</li></ul></section><section class="spec-item"><h3>2. Assentamento de Revestimentos</h3><p>Especialização técnica em materiais finos e grandes formatos.</p><ul><li><strong>Porcelanatos:</strong>Uso de niveladores de piso para garantir superfície 100% plana.</li><li><strong>Juntas:</strong>Execução de juntas mínimas conforme recomendação do fabricante (1mm a 2mm).</li><li><strong>Impermeabilização:</strong>Tratamento prévio em áreas úmidas para evitar infiltrações.</li></ul></section><section class="spec-item"><h3>3. Carpintaria Estrutural</h3><p>Segurança e estética em estruturas de madeira para telhados.</p><ul><li><strong>Tratamento:</strong>Orientação sobre madeiras imunes a cupins e intempéries.</li><li><strong>Encaixes:</strong>Cortes precisos para suporte de carga e durabilidade estrutural.</li><li><strong>Telhamento:</strong>Vedação técnica contra vazamentos e melhor conforto térmico.</li></ul></section><section class="spec-item"><h3>4. Padrões de Atendimento</h3><ul><li><strong>Organização:</strong>Canteiro de obras limpo e materiais otimizados.</li><li><strong>Cronograma:</strong>Entrega baseada em metas semanais de evolução.</li><li><strong>Transparência:</strong>Orçamentos detalhados sem custos ocultos.</li></ul></section></div><footer><p>&copy;
+2024 Sérgio Saconi - Construindo e Reformando Sonhos em Borborema/SP</p></footer></body></html>

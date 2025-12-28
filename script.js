@@ -1,31 +1,41 @@
+console.log("script.js carregado");
+
 document.addEventListener("DOMContentLoaded", function () {
+
+    /* ===== BOTÕES DE NAVEGAÇÃO ===== */
     const btnProxima = document.getElementById("btnProxima");
     const btnAnterior = document.getElementById("btnAnterior");
+    const proximaPagina = document.getElementById("proximaPagina");
 
     if (btnProxima) {
-        btnProxima.addEventListener("click", function () {
+        btnProxima.addEventListener("click", () => {
             window.location.href = "proxima.html";
         });
     }
 
     if (btnAnterior) {
-        btnAnterior.addEventListener("click", function () {
+        btnAnterior.addEventListener("click", () => {
             window.location.href = "index.html";
         });
     }
-});
-document.getElementById("proximaPagina").addEventListener("click", function(){
-    window.Location.href="file:///C:/Users/pinduka2/Desktop/sit%20pinduka/poxima.html;"
-});
-let indice= 0;
-function mudarImagem(n){
-    const imagens = document.querySelectorAll('.imagens img');
-    indice += n;
-    if(indice >= imagens.length){
-        indice= 0;
-    } else if(indice < 0){
-        indice = imagens.length -1;
+
+    if (proximaPagina) {
+        proximaPagina.addEventListener("click", () => {
+            window.location.href = "proxima.html";
+        });
     }
-    const deslocamento = -indice * 100; // Muda a imagem
-    document.querySelector('.imagens').style.transform = `translateX(${deslocamento}%)`;
-}
+
+    /* ===== CALENDÁRIO NO RODAPÉ ===== */
+    const spanData = document.getElementById("data-completa");
+
+    if (spanData) {
+        const agora = new Date();
+        const opcoes = {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        };
+        spanData.textContent = agora.toLocaleDateString('pt-BR', opcoes);
+    }
+
+});
