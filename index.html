@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="varss.css">
     <link rel="stylesheet" href="sidebar-footer.css">
     <script src="script.js" defer></script>
+    <script src="funcao.js" defer></script>
 
 
 </head>
@@ -45,17 +46,38 @@
                 <li onmouseover="mudaFoto('src/imagem/home.png')" onmouseout="mudaFoto('src/imagem/colher2.png')"><a
                         href="index.html">Home</a> </li>
                 <li onmouseover="mudaFoto('src/imagem/especificacoes-02.png')"
-                    onmouseout="mudaFoto('src/imagem/colher2.png')"><a href="specs.html"> Especificações</a></li>
+                    onmouseout="mudaFoto('src/imagem/colher2.png')">
+                    <a href="specs.html"> Especificações</a>
+                </li>
                 <li onmouseover="mudaFoto('src/imagem/fotos.png')
-                " onmouseout="mudaFoto('src/imagem/colher2.png')"><a href="fotos.html">Fotos</a> </li>
+                        " onmouseout="mudaFoto('src/imagem/colher2.png')"><a href="fotos.html">Fotos</a> </li>
                 <li onmouseover="mudaFoto('src/imagem/multimidia.png')" onmouseout="mudaFoto('src/imagem/colher2.png')">
                     <a href="multimidia.html">Multimídia</a>
                 </li>
-
-                <li><a href="fale-conosco.html">Fale conosco</a> </li>
+                <li onmouseover="mudaFoto('src/imagem/contato.png')" onmouseout="mudaFoto('src/imagem/colher2.png')"><a
+                        href="fale-conosco.html">Fale conosco</a> </li>
                 <ul>
         </nav>
     </div>
+    <section class="portfolio-section">
+        <h2 style="text-align: center;">Nossos Trabalhos</h2>
+        <div class="container-cards">
+            <div class="panel active" style="background-image: url('src/imagem/alvenaria.jpg')">
+                <h3><a href="specs.html#alvenaria" style="color: white;text-decoration: none;"> (Ver detalhes de Alvenaria)</a></h3>
+            </div>
+        
+            <div class="panel" style="background-image: url('src/imagem/pisos.png')">
+                <h3><a href="specs.html#Revestimentos">(Ver Detalhes sobre Pisos e Revestimentos)</a></h3>
+            </div>
+            <div class="panel" style="background-image: url('src/imagem/quiosque.png')">
+                <h3><a href="specs.html#carpintaria" style="color: white; text-decoration: none;">(Ver detalhe de Carpintaria)</a></h3>
+            </div>
+            <div class="panel" style="background-image: url('src/imagem/churrasqueira1.jpg')">
+                <h3><a href="specs.html#carpintaria" style="color: white; text-decoration: none;">(Ver detalhe de Churrasqueiras)</a>
+                </h3>
+            </div>
+        </div>
+    </section>
     <div id="interface">
         <section id="body">
             <article id="noticia-principal">
@@ -67,7 +89,7 @@
                     <p class="descricao">Nascido e residente em Borborema SP, <em>Sérgio Saconi</em> é um
                         profissional
                         experiente e
-                        dedicado, com mais de 16 anos de atuação nas áreas de alvenaria, assentamento de pisos e
+                        dedicado, com muitos anos de atuação nas áreas de alvenaria, assentamento de pisos e
                         azulejos e
                         carpintaria. Desde 2007, ele vem construindo e reformando sonhos, com qualidade, precisão e
                         compromisso
@@ -75,16 +97,25 @@
                         a satisfação de seus clientes.</p>
                 </div>
                 <!-- <main>-->
+                   
                 <div class="descricao">
                     <h2>Experiência e Qualificações</h2>
                     <p>Sérgio Saconi é um profissional completo, que domina as três áreas em que atua:</p>
                     <h3>Pedreiro:</h3>
                     <figure class="foto-legenda">
-                        <img src="src/imagem/alvenaria.jpg" alt="imagem">
-                        <figcaption>
-                            <h3>Alvenaria:</h3>
-                        </figcaption>
+                        <a href="specs.html#alvenaria">
+                            <img src="src/imagem/alvenaria.jpg" alt="Ir para detalhes de Alvenaria">
+                            <figcaption>
+                                <h3>Alvenaria:</h3>
+                            </figcaption>
+                            </a>
                     </figure>
+                    
+                    <figcaption>
+                        <h3>Alvenaria:</h3>
+                    </figcaption>
+                    </figure>
+                    
                     <div class="container">
                         <p class="texto">Experiência em alvenaria, construções, rebocos e contrapisos, garantindo a
                             estrutura e
@@ -95,7 +126,7 @@
                     </div>
                 </div>
                 <h3>Experiência e Qualificações</h3>
-                <p>Sérgio Saconi é um profissional completo, que domina as três áreas em que atua:</p>
+                <!--<p>Sérgio Saconi é um profissional completo, que domina as três áreas em que atua:</p>-->
 
                 <!-- <table border="1" style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
                     <tr style="background-color: #333; color: white;">
@@ -120,7 +151,7 @@
                     </tr>
                 </table>-->
 
-                <p><i>*Profissional com mais de 16 anos de experiência no mercado de Borborema e região.</i></p>
+                <p>*Profissional com muitos anos de experiência no mercado de Borborema e região.</p>
                 <!--MOntar tabela
                 <div id="tabela">
                     <h2>Especificações Técnicas</h2>
@@ -239,8 +270,7 @@
             <ul>
                 <li>Telefone (16)991429121</a> </li>
                 <li> E-mail: sergiosaconi@terra.com.br</li>
-                <li> <a href="https://www.instagram.com/pindukasergio?igsh=MWljc2emx4NDVpMw=="
-                        target="_blank">Instagram</a>></li>
+                <li> <a href="https://www.instagram.com/pinduka.sergio/#" target="_blank">Instagram</a>></li>
 
                 <li> <a href="multimidia.html">Multimídia</a></li>
 
@@ -257,21 +287,21 @@
         </nav>
         <p class="disclimer-premiun__subtitle"> </p>
         <div id="clock"></div>
-       
+
 
 
     </footer>
-    
-    
+
+
     <script src="script.js"></script>
 
-    
+
     <!-- <div class="botao">Instagram</div>-->
-   <!-- <script src="css/estilo.css">
+    <!-- <script src="css/estilo.css">
     </script>-->
 
-<!--<script src="funcao.js" defer></script>-->
-    
-</body >
+    <!--<script src="funcao.js" defer></script>-->
 
-</html >
+</body>
+
+</html>

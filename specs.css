@@ -2,18 +2,10 @@
  @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
 
  body {
-     /*width: 95%;*/
-     /* margin: 10px auto 0px auto;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
-        /*sombra no item*/
-     /* padding: 10px 10px 10px 10px;
-        /*informar somente uma vez se = todos os valores*/
-    /* text-indent: 20px;
-     font-family: "DM Sans" sans-serif;
-     background-color: rgb(1, 7, 7);
-     /* padding-top: -30px;*/
+
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     
+     font-size: 15pt;
+     margin: auto;
      line-height: 1.6;
      color: #333;
      margin: 0;
@@ -21,16 +13,25 @@
      background-color: #f4f4f4;
  }
 
+ h1 {
+     text-align: center;
+ }
+
+ p {
+     text-align: justify;
+     text-indent: 25px;
+ }
+
  header {
-     background:rgb(150, 130, 120);
+     background: rgb(150, 130, 120);
      color: black;
      padding: 2rem;
      text-align: center;
-    /* font-size: 70px;*/
+     /* font-size: 70px;*/
  }
 
  .container2 {
-     max-width: 900px;
+     text-align: left;
      margin: 20px auto;
      background: white;
      padding: 30px;
@@ -38,15 +39,19 @@
      border-radius: 8px;
  }
 
- h1 {
-    font-family: "DM Sans", sans-serif;
-        /*font-style: italic;*/
-        font: 70px;
-        font-size: 70px;
-       /* width: 700;*/
-        font-size: large;
-        padding-left: 20px;
-        margin-top: 50px;
+ article h3 {
+
+     /*font-style: italic;*/
+
+     font-size: 30px;
+     color: floralwhite;
+     background-color: rgba(0, 0, 0, 0.3);
+     padding: 5px;
+     margin: 0px;
+     /* width: 700;*/
+     /*  font-size: large;*/
+     /* padding-left: 20px;
+        margin-top: 50px;*/
  }
 
  h2 {
@@ -71,9 +76,47 @@
      list-style-type: square;
  }
 
+ article {
+     margin-bottom: 800px;
+ }
+
+ img.img-dir {
+     display: block;
+     float: right;
+ }
+
  footer {
      text-align: center;
      margin-top: 20px;
      font-size: 0.9em;
      color: #666;
+ }
+
+ .foto-legenda img {
+     transition: transform 0.3s;
+ }
+
+ .foto-legenda img:hover {
+     transform: scale(1.05);
+     /* Dá um leve zoom quando passa o mouse */
+     cursor: pointer;
+ }
+
+
+ article img {
+     max-width: 80%;
+     margin: 20px;
+     height: auto;
+     display: block;
+     border-radius: 8px;
+
+
+ }
+
+ .img-site {
+    max-width: 80%;
+        margin: 20px;
+        height: auto;
+        display: block;
+        border-radius: 8px;
  }
