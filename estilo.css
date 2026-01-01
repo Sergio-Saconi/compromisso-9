@@ -1,13 +1,92 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+@media (max-width: 600px) {
+    .container{
+        width: 100vw;
+        flex-direction: column;/*faz os cards ficarem embaixo um do outro */
+        height: 90vw;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display:none;    }
 
+
+.panel {
+    height: 15vh; /*diminui a altura prara caber varios na tela do celular*/
+}
+
+.panel.active {
+    flex:10; /*Da mais destaque ao cad aberto no celular*/
+}
+}
 
 body {
     font-family: "DM Sans" sans-serif;
     background-color: azure;
     padding-top: -30px;
+    overflow-y: auto;
     /*background-image: url("src/imagem/azulejo.jpg");
     background-color: rgba(0, 0, 0, 0.2);*/
+}
+
+/*Formatar links*/
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+aside#lateral {
+
+    display: block;
+    width: 38%;
+    float: right;
+    top: 30px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+article#noticia-principal h2 {
+    font-size: 15pt;
+    color: #000000;
+    background-color: #dddddd;
+    padding: 2% 0% 2% 2%;
+    margin: 5% 0% 5% 0%;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+caption span {
+    display: block;
+    float: right;
+    font: #000000;
+    font-size: 8pt;
+    margin-top: 2%;
+
 }
 
 div#interface {
@@ -21,48 +100,20 @@ div#interface {
     text-indent: 20px;
 }
 
-.title .texto {
-    text-align: center;
-    display: block;
-    align-items: center;
-    text-indent: 40px;
-    font-family: "DM Sans", sans-serif;
-    font: 40px;
-    width: 700;
-    background-color: rgb(224, 215, 210);
-    position: relative;
-    top: 50px;
-}
 
-/*Formatar links*/
-a {
-    color: #606060;
-    text-decoration: none;
-}
 
-a:hover {
-    text-decoration: underline;
-}
+
 
 div#container {
     border-bottom: 2px #60606060 solid;
 }
 
-.container {
-    display: block;
-    align-items: center;
-
-
+h1#tabela {
+    display: flex;
 }
 
-.title .imagem {
-
-    width: 150px;
-    height: auto;
-    margin-left: 150px;
 
 
-}
 
 header#cabecalho img#icone {
     position: absolute;
@@ -135,20 +186,7 @@ header#cabecalho img#icone {
     line-height: 1;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
 
-button:hover {
-    background-color: #0056b3;
-}
 
 .carrosel {
     position: relative;
@@ -167,15 +205,7 @@ button:hover {
     display: block;
 }
 
-button {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
+
 
 .prev {
     left: 10px;
@@ -280,6 +310,13 @@ nav#menu a:hover {
     text-decoration: underline;
 
 }
+section#body {
+    display: block;
+    width: 60%;
+    float: left;
+    /*para usar a ferramenta float os objetos tem que estar configurados em blocos = display:block;*/
+    border-right: 1px solid #606060;
+}
 
 .instagram {
     display: block;
@@ -323,22 +360,31 @@ nav#menu a:hover {
     font-size: 20px;
 }
 
-
-section#body {
+.title .texto {
+    text-align: center;
     display: block;
-    width: 60%;
-    float: left;
-    /*para usar a ferramenta float os objetos tem que estar configurados em blocos = display:block;*/
-    border-right: 1px solid #606060;
+    align-items: center;
+    text-indent: 40px;
+    font-family: "DM Sans", sans-serif;
+    font: 40px;
+    width: 700;
+    background-color: rgb(224, 215, 210);
+    position: relative;
+    top: 50px;
 }
 
-article#noticia-principal h2 {
-    font-size: 15pt;
-    color: #000000;
-    background-color: #dddddd;
-    padding: 2% 0% 2% 2%;
-    margin: 5% 0% 5% 0%;
+.title .imagem {
+
+    width: 150px;
+    height: auto;
+    margin-left: 150px;
+
+
 }
+
+
+
+
 
 header#cabecalho-artigo h2 {
     font-family: "DM Sans", sans-serif;
@@ -349,20 +395,9 @@ header#cabecalho-artigo h2 {
 }
 
 /*Formataçao da tabela*/
-aside#lateral {
 
-    display: block;
-    width: 38%;
-    float: right;
-    top: 30px;
-}
 
-.missao {
-    font-family: "DM Sans", sans-serif;
-    font-size: 20px;
-    top: 40px;
-    margin-top: 40%;
-}
+
 
 table#tabelaspec {
     border: 1px solid #60606060;
@@ -372,8 +407,12 @@ table#tabelaspec {
 }
 
 
-h1#tabela {
-    display: flex;
+
+/*Formatação do caption*/
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
 }
 
 table#tabelaspec td {
@@ -391,26 +430,12 @@ table#tabelaspec td {
     font-weight: bold;
 }
 
-/*Coluna da esquerda*/
-.cd {
-    background-color: #cecece;
-}
 
-/*Formatação do caption*/
-table#tabelaspec caption {
-    color: #888888;
-    font-size: 13pt;
-    font-weight: bolder;
-}
 
-caption span {
-    display: block;
-    float: right;
-    font: #000000;
-    font-size: 8pt;
-    margin-top: 2%;
 
-}
+
+
+
 
 /* Ajuste apenas para os cards */
 .container-cards {
@@ -418,6 +443,28 @@ caption span {
     width: 90vw;
     margin: 0 auto;
     /* Centraliza na página */
+}
+
+/*Coluna da esquerda*/
+.cd {
+    background-color: #cecece;
+}
+
+.container {
+    display: block;
+    align-items: center;
+    padding-top: 2.5px, 8px;
+    padding-top: 2.0px, 80px;
+
+}
+
+
+
+.missao {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    top: 40px;
+    margin-top: 40%;
 }
 
 .panel {

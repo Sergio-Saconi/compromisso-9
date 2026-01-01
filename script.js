@@ -38,31 +38,29 @@ document.addEventListener("DOMContentLoaded", function () {
         spanData.textContent = agora.toLocaleDateString('pt-BR', opcoes);
     }
 
-});
+    /* ===== EXPANDING CARDS (PAINÉIS) ===== */
+    const panels = document.querySelectorAll('.panel');
 
-
-const panels = document.querySelectorAll('.panel');
-
-panels.forEach(panel => {
-    panel.addEventListener('click', (e) => {
-        // Verifica se o painel clicado JÁ tem a classe 'active'
-        if (panel.classList.contains('active')) {
-            // Se já estiver aberto, pegamos o link que está no "data-link" ou no href interno
-            const link = panel.getAttribute('data-url');
-            if (link) {
-                window.location.href = link;
-            }
-        } else {
-            // Se não estiver aberto, primeiro removemos o active dos outros
-            removeActiveClasses();
-            // E adicionamos no que foi clicado
-            panel.classList.add('active');
-        }
-    });
-});
-
-function removeActiveClasses() {
     panels.forEach(panel => {
-        panel.classList.remove('active');
+        panel.addEventListener('click', () => {
+            // Se já estiver aberto, navega para o link
+            if (panel.classList.contains('active')) {
+                const link = panel.getAttribute('data-url');
+                if (link) {
+                    window.location.href = link;
+                }
+            } else {
+                // Se estiver fechado, abre o painel
+                removeActiveClasses(panels);
+                panel.classList.add('active');
+            }
+        });
     });
-}
+
+    function removeActiveClasses(allPanels) {
+        allPanels.forEach(p => {
+            p.classList.remove('active');
+        });
+    }
+
+});

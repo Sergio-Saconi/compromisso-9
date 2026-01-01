@@ -1,5 +1,30 @@
  @charset "UTF-8";
  @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+ @media (max-width: 600px) {
+     body {
+         /* Se você usou overflow: hidden no projeto da aula, REMOVA-O aqui */
+         overflow-y: auto;
+     }
+
+     article {
+         padding: 20px;
+         /* Cria uma margem interna para o texto não tocar na borda */
+     }
+
+     h3 {
+         font-size: 1.4rem;
+         /* Diminui um pouco o tamanho da letra no celular */
+         word-wrap: break-word;
+         /* Força a quebra de palavras muito longas */
+     }
+
+     p,
+     li {
+         font-size: 1rem;
+         line-height: 1.5;
+         /* Melhora o espaçamento entre linhas para leitura */
+     }
+ }
 
  body {
 
@@ -78,11 +103,14 @@
 
  article {
      margin-bottom: 800px;
+     padding: 15px;
  }
 
  img.img-dir {
      display: block;
      float: right;
+     margin-right: 80px;
+     text-align: right;
  }
 
  footer {
@@ -114,9 +142,28 @@
  }
 
  .img-site {
-    max-width: 80%;
-        margin: 20px;
-        height: auto;
-        display: block;
-        border-radius: 8px;
+     max-width: 50%;
+     height: auto;
+     display: block;
+     margin: 20px;
+
+
+ }
+
+ h3 {
+    font-size: 1.5rem;
+    word-wrap: break-word;/*Força a quebra se palavras muito longas*/
+ }
+/*isso faz todas as imagens do site respeitarem a largura da tela*/
+ img {
+    max-width: 100%;/*A imagem nunca sera maior que a tela*/
+    height: auto;/*Mantem a proprçao para nao achatar a foto*/
+    display: block;/* evita espaços vazios indesejados*/
+ }
+
+ /*Ajuste especifico para as imagens dentro dos artigos de especificaçoes*/
+ article img {
+    margin: 20px auto; /*centraliza a foto e da um espaço do texto*/
+    border-radius: 10px;/*diexa o acabamento mais bonito*/
+    padding: 20px;/*Cria uma margem interna para o texto nao tocar na borda*/
  }
